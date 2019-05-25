@@ -1,6 +1,14 @@
 <template>
   <div class="hello">
     <ul>
+      <li>
+        <router-link :to="routerList.hello">hellorouter</router-link>
+      </li>
+      <li>
+        <router-link :to="routerList.herf">hellohref</router-link>
+      </li>
+    </ul>
+    <ul>
       <li v-for="banner in list">
         <p>{{banner.title}}</p>
         <img :src="banner.img" alt="">
@@ -15,7 +23,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      list:[]
+      list:[],
+      routerList:{
+        hello:'/hello',
+        herf:'/herfrouter'
+      }
     }
   },
   created() {
