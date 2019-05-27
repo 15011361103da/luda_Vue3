@@ -26,7 +26,7 @@ export default {
     margin: 0;
     padding: 0;
   }
-  /*全局设置高亮*/
+  /*全局设置高亮 .*/
   .router-link-active{
     color:red;
   }
